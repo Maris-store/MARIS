@@ -1,0 +1,81 @@
+.story-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:38px;
+    align-items:center
+}
+
+.story-media{
+    min-height:560px;
+    border-radius:44px;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.72)
+        ),
+        url('../assets/images/karakoram.jpeg') center/cover;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow)
+}
+
+.values{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px
+}
+
+.value-card{
+    padding:30px
+}
+
+.timeline{
+    position:relative;
+    display:grid;
+    gap:22px
+}
+
+.timeline:before{
+    content:"";
+    position:absolute;
+    left:18px;
+    top:0;
+    bottom:0;
+    width:1px;
+    background:var(--line)
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:58px
+}
+
+.timeline-item:before{
+    content:"";
+    position:absolute;
+    left:9px;
+    top:8px;
+    width:18px;
+    height:18px;
+    background:var(--beige);
+    border-radius:50%;
+    box-shadow:var(--glow)
+}
+
+.timeline-item h3{
+    font-family:var(--font-head);
+    margin:0
+}
+
+.philosophy{
+    padding:62px;
+    border-radius:48px;
+    border:1px solid var(--line);
+    background:
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(216,195,165,.18),
+            transparent 28%
+        ),
+        rgba(15,30,51,.24)
+}

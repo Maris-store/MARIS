@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shopping Cart — MARIS</title>
+
+    <meta name="description"
+        content="Review your MARIS shopping cart and proceed to WhatsApp checkout with an automatic order summary.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Montserrat:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="eyebrow">Shopping Cart</span>
+
+                <h1 class="section-title">
+                    Your MARIS order.
+                </h1>
+
+                <p class="section-copy">
+                    Adjust quantity, add a coupon note, and send your order summary through WhatsApp checkout.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="section tight">
+
+            <div class="container cart-layout">
+
+                <div id="cartList"></div>
+
+                <aside id="summaryBox" class="summary-box">
+
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <strong id="subtotal">PKR 0</strong>
+                    </div>
+
+                    <div class="summary-line">
+                        <span>Shipping</span>
+                        <strong id="shipping">WhatsApp</strong>
+                    </div>
+
+                    <div class="coupon">
+
+                        <input class="form-input" placeholder="Coupon code">
+
+                        <button class="btn small">
+                            <span>Apply</span>
+                        </button>
+
+                    </div>
+
+                    <div class="summary-line summary-total">
+                        <span>Total</span>
+                        <strong id="total">PKR 0</strong>
+                    </div>
+
+                    <button id="checkoutWA" class="btn primary full">
+                        <span>Proceed to WhatsApp Checkout</span>
+                    </button>
+
+                    <a class="btn full" href="shop.html" style="margin-top:10px">
+                        <span>Continue Shopping</span>
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

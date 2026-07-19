@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shop Luxury Sneakers — MARIS</title>
+
+    <meta name="description"
+        content="Shop MARIS premium Pakistani luxury sneakers with filters for collection, price, color, and size.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Montserrat:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="shop-hero">
+            <div class="container">
+
+                <span class="eyebrow">Shop MARIS</span>
+
+                <h1 class="section-title">
+                    Luxury sneakers, precisely filtered.
+                </h1>
+
+                <p class="section-copy">
+                    Find your silhouette by collection, price, color, and size.
+                    Checkout happens through WhatsApp for direct guidance.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="section tight">
+
+            <div class="container shop-layout" id="shopControls">
+
+                <aside class="filters">
+
+                    <h3>Filters</h3>
+
+                    <div class="filter-group">
+
+                        <h4>Collection</h4>
+
+                        <label>
+                            <input type="radio" name="cat" value="All" checked> All
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cat" value="New Arrivals"> New Arrivals
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cat" value="Best Sellers"> Best Sellers
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cat" value="Limited Edition"> Limited Edition
+                        </label>
+
+                    </div>
+
+                    <div class="filter-group">
+
+                        <h4>Max Price</h4>
+
+                        <input id="priceRange"
+                            class="range"
+                            type="range"
+                            min="20000"
+                            max="35000"
+                            value="35000"
+                            step="500">
+
+                        <p class="muted" id="priceValue">
+                            PKR 35,000
+                        </p>
+
+                    </div>
+
+                    <div class="filter-group">
+
+                        <h4>Color</h4>
+
+                        <label>
+                            <input type="checkbox" name="color" value="Black"> Black
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="color" value="Navy"> Navy
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="color" value="Beige"> Beige
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="color" value="Ivory"> Ivory
+                        </label>
+
+                    </div>
+
+                    <div class="filter-group">
+
+                        <h4>Size</h4>
+
+                        <div class="option-row">
+                            <span class="choice">39</span>
+                            <span class="choice">40</span>
+                            <span class="choice">41</span>
+                            <span class="choice">42</span>
+                            <span class="choice">43</span>
+                            <span class="choice">44</span>
+                            <span class="choice">45</span>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <div>
+
+                    <div class="shop-toolbar">
+
+                        <input id="shopSearch"
+                            class="search-input"
+                            placeholder="Search products"
+                            aria-label="Search products">
+
+                        <div style="display:flex;gap:12px;align-items:center">
+
+                            <span id="productCount" class="muted">
+                                0 products
+                            </span>
+
+                            <select id="sort"
+                                class="select-input"
+                                aria-label="Sort products">
+
+                                <option value="featured">Featured</option>
+                                <option value="low">Price low to high</option>
+                                <option value="high">Price high to low</option>
+                                <option value="name">Name</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div id="shopGrid" class="product-grid"></div>
+
+                    <div id="pagination" class="pagination"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+
+</body>
+
+</html>
